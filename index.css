@@ -4,3 +4,6 @@ ul,li{
 li:hover a{
     color: green
 }
+a{
+    color: black;
+}
