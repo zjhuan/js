@@ -1,0 +1,39 @@
+//&&符合做判断
+var url  = ret.content;
+!(url.indexOf('http') != -1) && (url = 'http://'.concat(url));  /*url没有协议头 拼接协议头*/
+window.location.href =url
+
+// ||符号判断空值
+var flag = flag || document.createDocumentFragment();
+
+//switch… case… 范围判断
+let i = ret.data;
+if(!i) return;
+const L1 = 0<i && i<=5;
+const L1 = 0<5 && i<=20;
+const L1 = 0<20 && i<=100;
+const L1 = 100<i;
+swith(true){
+  case L1:
+    ...
+    break;
+  case L2:
+    ...
+    break;
+  case L3:
+    ...
+    break;
+  case L4:
+    ...
+    break;
+  default:
+    ...
+    break;
+}
+
+//数组方式 过滤数据格式
+var arrOrderType = ['方式一'，'方式二','方式三'，'方式四'];
+function change(row, column, val){
+  if(!val && val<0 && val >=arrOrderType.length) return ""; /*空值 和 不合法值*/
+  return this.arrOrderType[val]
+}
