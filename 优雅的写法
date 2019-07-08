@@ -33,7 +33,7 @@ swith(true){
 
 //数组方式 过滤数据格式
 var arrOrderType = ['方式一'，'方式二','方式三'，'方式四'];
-function change(row, column, val){
+function change(val){
   if(!val && val<0 && val >=arrOrderType.length) return ""; /*空值 和 不合法值*/
   return this.arrOrderType[val]
 }
